@@ -1,6 +1,6 @@
 # Cars & Automotive Expert Assistant - LLM Fine-Tuning Project
 
-## 🚗 Project Overview
+##  Project Overview
 
 This is a production-ready machine learning project that fine-tunes an open-source Large Language Model (Mistral-7B or Llama-2-7B) to become a specialized **Automotive Domain Expert Assistant**. The model is trained to provide expert-level knowledge on car specifications, technologies, buying advice, maintenance, and automotive engineering concepts.
 
@@ -12,7 +12,7 @@ This is a production-ready machine learning project that fine-tunes an open-sour
 - Answer questions about tuning, safety features, and fuel efficiency
 - Discuss maintenance schedules and common repair issues
 
-## 🎯 Why This Project Matters
+##  Why This Project Matters
 
 ### Business Value
 - **Automotive Dealerships**: Automated customer support and product recommendations
@@ -27,7 +27,7 @@ This is a production-ready machine learning project that fine-tunes an open-sour
 - **Domain Specialization**: Focused dataset with automotive-specific instruction-following examples
 - **Production-Ready**: Clean architecture, error handling, reproducibility, and logging
 
-## 🛠️ Technical Architecture
+## Technical Architecture
 
 ### Base Model Selection
 - **Primary**: `mistralai/Mistral-7B-v0.1` (recommended for quality/efficiency balance)
@@ -67,7 +67,7 @@ Both models offer:
 - **Optimizer**: AdamW with 8-bit precision
 - **Scheduler**: Linear warmup with cosine decay
 
-## 📊 Dataset Design
+##  Dataset Design
 
 The training dataset is specifically designed for automotive domain expertise:
 
@@ -99,7 +99,7 @@ The training dataset is specifically designed for automotive domain expertise:
 - Natural conversational tone
 - Varied complexity levels
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 - Python 3.8+
@@ -122,7 +122,7 @@ pip install -r requirements.txt
 huggingface-cli login
 ```
 
-## 🎓 Training the Model
+##  Training the Model
 
 ### Quick Start
 ```bash
@@ -147,7 +147,7 @@ python scripts/train.py
 - Final model saved to `./automotive_expert_model`
 - Training logs in `./results/trainer_log.txt`
 
-## 🔍 Evaluation
+##  Evaluation
 
 ### Run Evaluation Script
 ```bash
@@ -169,7 +169,7 @@ python scripts/evaluate.py
 - "Explain how regenerative braking works"
 - "What maintenance does a Tesla Model 3 need?"
 
-## 💬 Inference & Chat
+##  Inference & Chat
 
 ### Interactive Chat Mode
 ```bash
@@ -208,7 +208,7 @@ Choose AWD for daily driving with occasional bad weather, 4WD for off-road adven
 
 All these have strong reliability ratings and affordable parts."
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Cars & Automotive Expert Assistant/
@@ -247,7 +247,7 @@ Cars & Automotive Expert Assistant/
     └── helpers.py               # Utility functions
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 All hyperparameters are centralized in `config.py`:
 
@@ -259,7 +259,7 @@ All hyperparameters are centralized in `config.py`:
 
 Modify `config.py` to experiment with different settings.
 
-## 🎯 Why This Approach Works
+##  Why This Approach Works
 
 ### 1. **Memory Efficiency**
 QLoRA enables training 7B models on consumer GPUs by:
@@ -287,7 +287,7 @@ LoRA adapters are small (~40MB) compared to full models (13GB+):
 - Checkpointing for recovery from failures
 - Clean code architecture for maintenance
 
-## 📈 Expected Results
+##  Expected Results
 
 After fine-tuning, you should observe:
 - **Improved Technical Accuracy**: Better responses on automotive terminology
@@ -295,7 +295,7 @@ After fine-tuning, you should observe:
 - **Practical Advice**: Actionable buying and maintenance recommendations
 - **Conversational Quality**: Natural dialogue about cars
 
-## 🔄 Next Steps & Improvements
+##  Next Steps & Improvements
 
 ### Dataset Enhancement
 - Integrate real car review data (Edmunds, Car and Driver)
@@ -321,7 +321,7 @@ After fine-tuning, you should observe:
 - Benchmark on automotive Q&A datasets
 - Track user satisfaction metrics
 
-## 📚 References & Resources
+##  References & Resources
 
 ### Papers
 - **LoRA**: "LoRA: Low-Rank Adaptation of Large Language Models" (Hu et al., 2021)
@@ -339,7 +339,7 @@ After fine-tuning, you should observe:
 - Edmunds API
 - Car and Driver Reviews
 
-## 👥 Target Audience
+##  Target Audience
 
 This project is valuable for:
 - **ML Engineers**: Learn LLM fine-tuning best practices
@@ -348,11 +348,11 @@ This project is valuable for:
 - **Educational Platforms**: Create interactive learning tools
 - **Portfolio Projects**: Demonstrate end-to-end ML skills
 
-## 📄 License
+##  License
 
 This project is for educational and commercial use. Base models have their own licenses (Apache 2.0 for Mistral, custom for Llama-2).
 
-## 🤝 Contributing
+##  Contributing
 
 To improve this project:
 1. Expand the automotive dataset with verified information
@@ -361,7 +361,7 @@ To improve this project:
 4. Optimize training hyperparameters
 5. Create deployment guides
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This model provides general automotive information and advice. Always:
 - Consult certified mechanics for repairs
